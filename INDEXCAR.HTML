@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Hot Wheels Car Rental | Premium Cars in Clement Town, Dehradun</title>
+    <meta name="description" content="Hot Wheels Car Rental by Pranav Garg. Best premium & luxury car rental service in Clement Town, Dehradun, Uttarakhand. Book Scorpio N, Thar, Fortuner with unlimited kilometers.">
+    <meta name="keywords" content="Car rental Dehradun, rent a car Clement town, Hot Wheels Car Rental, Pranav Garg car rental, unlimited kilometers car rent, luxury car rent Uttarakhand, Scorpio N rent Dehradun, Thar on rent, self drive cars Dehradun, best car rental Uttarakhand">
+    <meta name="author" content="Pranav Garg">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="Hot Wheels Car Rental - Premium Self-Drive Cars">
+    <meta property="og:description" content="Drive your dreams with our premium fleet in Dehradun. Unlimited kilometers available!">
+    <meta property="og:type" content="website">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRental",
+      "name": "Hot Wheels Car Rental",
+      "image": "scorpio.jpg",
+      "telephone": "+919720392305",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Clement Town",
+        "addressLocality": "Dehradun",
+        "addressRegion": "Uttarakhand",
+        "addressCountry": "IN"
+      },
+      "founder": "Pranav Garg",
+      "priceRange": "₹1500 - ₹5000"
+    }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- GLOBAL LUXURY RESET --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        body {
+            background-color: #fafafa;
+            color: #111111;
+            overflow-x: hidden;
+        }
+
+        /* --- INTRO SHUTTER SCREEN --- */
+        #shutter {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #09090b;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 1.2s cubic-bezier(0.85, 0, 0.15, 1);
+            background-image: repeating-linear-gradient(0deg, #141416, #141416 12px, #0a0a0c 12px, #0a0a0c 24px); 
+        }
+        .intro-text {
+            color: #f4f4f5;
+            margin-bottom: 35px;
+            font-size: 1.3rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-weight: 400;
+            animation: luxuryPulse 2s infinite ease-in-out;
+        }
+        @keyframes luxuryPulse {
+            0% { opacity: 0.4; letter-spacing: 3px; }
+            50% { opacity: 1; letter-spacing: 5px; }
+            100% { opacity: 0.4; letter-spacing: 3px; }
+        }
+        #scorpio {
+            width: 340px;
+            cursor: pointer;
+            transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+            filter: drop-shadow(0px 20px 30px rgba(0,0,0,0.7));
+        }
+        #scorpio:hover {
+            transform: scale(1.05);
+        }
+        .drive-away {
+            transform: translateX(130vw) scale(1.15) skewX(-8deg) !important;
+            opacity: 0.8;
+        }
+        .slide-up {
+            transform: translateY(-100vh);
+        }
+
+        /* --- MAIN WEBSITE CONTENT --- */
+        #main-content {
+            opacity: 0;
+            transition: opacity 1.2s ease-in;
+        }
+
+        /* Header Section (Editorial Luxury Look) */
+        header {
+            background: #ffffff;
+            padding: 90px 20px 70px;
+            text-align: center;
+            border-bottom: 1px solid #eaeaea;
+            position: relative;
+        }
+        header h1 {
+            font-size: 3.8rem;
+            font-weight: 700;
+            color: #0f172a;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        header p {
+            font-size: 1.15rem;
+            color: #64748b;
+            margin-top: 8px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        .location-badge {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 32px;
+            background: #f8fafc;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #334155;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+        }
+
+        /* Gallery Container */
+        .container {
+            max-width: 1300px;
+            margin: 80px auto;
+            padding: 0 25px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.4rem;
+            margin-bottom: 60px;
+            font-weight: 600;
+            color: #0f172a;
+            letter-spacing: 0.5px;
+        }
+
+        /* Responsive Grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        /* Premium Glass/White Car Card */
+        .car-card {
+            background-color: #ffffff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            border: 1px solid #eaeaea;
+            display: flex;
+            flex-direction: column;
+            padding: 24px;
+            position: relative;
+        }
+        .car-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.07);
+            border-color: #cbd5e1;
+        }
+        
+        /* Image Display Box */
+        .car-img-container {
+            height: 210px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            background: radial-gradient(circle, #f8fafc 0%, #ffffff 80%);
+            border-radius: 12px;
+            padding: 10px;
+        }
+        .car-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+            filter: drop-shadow(0px 10px 15px rgba(0,0,0,0.08));
+        }
+        .car-card:hover img {
+            transform: scale(1.08) translateY(-4px);
+        }
+
+        /* Car Details Typography */
+        .car-info {
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .car-title {
+            font-size: 1.45rem;
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 6px;
+        }
+        .car-price {
+            font-size: 1.25rem;
+            color: #1e293b;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        .car-features {
+            font-size: 0.9rem;
+            color: #64748b;
+            margin-bottom: 25px;
+        }
+        .car-features strong {
+            color: #0f172a;
+            background: #f1f5f9;
+            padding: 6px 16px;
+            border-radius: 30px;
+            display: inline-block;
+            margin-bottom: 10px;
+            font-weight: 500;
+            border: 1px solid #e2e8f0;
+        }
+        
+        /* Ultra-Clean WhatsApp Button */
+        .whatsapp-btn {
+            background-color: #16a34a;
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: inline-block;
+            transition: all 0.3s ease;
+            margin-top: auto;
+            box-shadow: 0 4px 15px rgba(22, 163, 74, 0.25);
+            letter-spacing: 0.5px;
+        }
+        .whatsapp-btn:hover {
+            background-color: #15803d;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(22, 163, 74, 0.35);
+        }
+
+        /* Luxury Footer */
+        footer {
+            background-color: #ffffff;
+            padding: 70px 20px;
+            text-align: center;
+            border-top: 1px solid #eaeaea;
+            margin-top: 80px;
+        }
+        footer h3 {
+            font-size: 1.7rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #0f172a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        footer p {
+            color: #64748b;
+            margin: 8px 0;
+            font-size: 0.95rem;
+        }
+        footer a {
+            color: #0f172a;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid #0f172a;
+            padding-bottom: 2px;
+        }
+        .footer-bottom {
+            margin-top: 40px;
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.4rem; letter-spacing: 1px; }
+            .section-title { font-size: 1.9rem; }
+            #scorpio { width: 260px; }
+            .intro-text { font-size: 1.1rem; letter-spacing: 2px; }
+            .container { margin: 40px auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <audio id="carSound" src="engine-sound.mp3" preload="auto"></audio>
+
+    <div id="shutter">
+        <h2 class="intro-text">Tap to Start Engine</h2>
+        <img src="scorpio.jpg" id="scorpio" alt="Scorpio">
+    </div>
+
+    <div id="main-content">
+        <header>
+            <h1>Hot Wheels CAR RENTAL</h1>
+            <p>Premium Car Rental Services</p>
+            <div class="location-badge">📍 Clement Town, Dehradun</div>
+        </header>
+
+        <div class="container">
+            <h2 class="section-title">Our Exclusive Fleet</h2>
+            
+            <div class="gallery">
+                <div class="car-card">
+                    <div class="car-img-container">
+                        <img src="car1.png" alt="Scorpio N on rent Dehradun">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">Scorpio N</div>
+                        <div class="car-price">₹6,000 / Day</div>
+                        <div class="car-features">
+                            <strong>✔️ Unlimited Kilometers</strong><br>
+                            SUV
+                        </div>
+                        <a href="https://wa.me/919720392305?text=Hello%20Pranav,%20I%20want%20to%20inquire%20about%20the%20Scorpio%20N." target="_blank" class="whatsapp-btn">Book on WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-img-container">
+                        <img src="car2.png" alt="Mahindra Thar on rent Dehradun">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">Mahindra Thar</div>
+                        <div class="car-price">₹5,000 / Day</div>
+                        <div class="car-features">
+                            <strong>✔️ Unlimited Kilometers</strong><br>
+                            SUV
+                        </div>
+                        <a href="https://wa.me/919720392305?text=Hello%20Pranav,%20I%20want%20to%20inquire%20about%20the%20Mahindra%20Thar." target="_blank" class="whatsapp-btn">Book on WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-img-container">
+                        <img src="car3.png" alt="Hyundai Creta on rent Dehradun">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">Hyundai Creta</div>
+                        <div class="car-price">₹3,500 / Day</div>
+                        <div class="car-features">
+                            <strong>✔️ Unlimited Kilometers</strong><br>
+                            SUV
+                        </div>
+                        <a href="https://wa.me/919720392305?text=Hello%20Pranav,%20I%20want%20to%20inquire%20about%20the%20Hyundai%20Creta." target="_blank" class="whatsapp-btn">Book on WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-img-container">
+                        <img src="car4.png" alt="Toyota Fortuner on rent Dehradun">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">BALENO</div>
+                        <div class="car-price">₹2,500 / Day</div>
+                        <div class="car-features">
+                            <strong>✔️ Unlimited Kilometers</strong><br>
+                            HATCHBACK
+                        </div>
+                        <a href="https://wa.me/919720392305?text=Hello%20Pranav,%20I%20want%20to%20inquire%20about%20the%20Toyota%20Fortuner." target="_blank" class="whatsapp-btn">Book on WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-img-container">
+                        <img src="car5.png" alt="Kia Seltos on rent Dehradun">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">FRONX</div>
+                        <div class="car-price">₹3,000 / Day</div>
+                        <div class="car-features">
+                            <strong>✔️ Unlimited Kilometers</strong><br>
+                            HATCHBACK
+                        </div>
+                        <a href="https://wa.me/919720392305?text=Hello%20Pranav,%20I%20want%20to%20inquire%20about%20the%20Kia%20Seltos." target="_blank" class="whatsapp-btn">Book on WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-img-container">
+                        <img src="car6.png" alt="Honda City on rent Dehradun">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">Honda City</div>
+                        <div class="car-price">₹3,500 / Day</div>
+                        <div class="car-features">
+                            <strong>✔️ Unlimited Kilometers</strong><br>
+                            Sedan
+                        </div>
+                        <a href="https://wa.me/919720392305?text=Hello%20Pranav,%20I%20want%20to%20inquire%20about%20the%20Honda%20City." target="_blank" class="whatsapp-btn">Book on WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-img-container">
+                        <img src="car7.png" alt="Maruti Swift on rent Dehradun">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">Maruti Swift</div>
+                        <div class="car-price">₹2,500 / Day</div>
+                        <div class="car-features">
+                            <strong>✔️ Unlimited Kilometers</strong><br>
+                            HATCHBACK
+                        </div>
+                        <a href="https://wa.me/919720392305?text=Hello%20Pranav,%20I%20want%20to%20inquire%20about%20the%20Maruti%20Swift." target="_blank" class="whatsapp-btn">Book on WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-img-container">
+                        <img src="car8.png" alt="Toyota Innova on rent Dehradun">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-title">i20</div>
+                        <div class="car-price">₹2500 / Day</div>
+                        <div class="car-features">
+                            <strong>✔️ Unlimited Kilometers</strong><br>
+                            HATCHBACK
+                        </div>
+                        <a href="https://wa.me/919720392305?text=Hello%20Pranav,%20I%20want%20to%20inquire%20about%20the%20Toyota%20Innova." target="_blank" class="whatsapp-btn">Book on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <h3>Hot Wheels Car Rental</h3>
+            <p><strong>Owner:</strong> Pranav Garg</p>
+            <p><strong>Location:</strong> Clement Town,SUBHASH NAGAR, Dehradun, Uttarakhand,(248002)</p>
+            <p><strong>Contact:</strong> <a href="https://wa.me/919720392305">+91 9720392305</a></p>
+            <p class="footer-bottom">&copy; 2026 Hot Wheels Car Rental. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        const scorpio = document.getElementById('scorpio');
+        const shutter = document.getElementById('shutter');
+        const mainContent = document.getElementById('main-content');
+        const carSound = document.getElementById('carSound');
+
+        scorpio.addEventListener('click', () => {
+            carSound.play().catch(error => console.log("Sound ready on interaction."));
+            
+            scorpio.classList.add('drive-away');
+            
+            setTimeout(() => {
+                shutter.classList.add('slide-up');
+                mainContent.style.opacity = '1';
+            }, 800);
+
+            setTimeout(() => {
+                shutter.style.display = 'none';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

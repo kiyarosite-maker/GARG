@@ -3,476 +3,488 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- --- SEO OPTIMIZATION --- -->
+    <meta name="description" content="Hot Wheels Car Rental Dehradun offers premium self-drive cars, luxury SUVs, and hatchbacks at affordable prices. Enjoy unlimited km, doorstep delivery, and 24/7 support.">
+    <meta name="keywords" content="car rental in dehradun, self drive cars in dehradun, hot wheels car rental, hire car in dehradun, thar on rent in dehradun, jolly grant airport car rental">
+    <title>Hot Wheels Car Rental | Top Self Drive Car Rental in Dehradun</title>
     
-    <title>Hot Wheels Car Rental | Premium Cars in Clement Town, Dehradun</title>
-    <meta name="description" content="Hot Wheels Car Rental by Pranav Garg. Best premium & luxury car rental service in Clement Town, Dehradun, Uttarakhand. Book Scorpio N, Thar, Fortuner with unlimited kilometers.">
-    <meta name="keywords" content="Car rental Dehradun, rent a car Clement town, Hot Wheels Car Rental, Pranav Garg car rental, unlimited kilometers car rent, luxury car rent Uttarakhand, Scorpio N rent Dehradun, Thar on rent, self drive cars Dehradun, best car rental Uttarakhand">
-    <meta name="author" content="Pranav Garg">
-    <meta name="robots" content="index, follow">
+    <!-- Premium Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     
-    <meta property="og:title" content="Hot Wheels Car Rental - Premium Self-Drive Cars">
-    <meta property="og:description" content="Drive your dreams with our premium fleet in Dehradun. Unlimited kilometers available!">
-    <meta property="og:type" content="website">
+    <!-- Flatpickr for Premium Date Selection Software -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
     
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AutoRental",
-      "name": "Hot Wheels Car Rental",
-      "image": "scorpio.png",
-      "telephone": "+919720392305",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Clement Town",
-        "addressLocality": "Dehradun",
-        "addressRegion": "Uttarakhand",
-        "addressCountry": "IN"
-      },
-      "founder": "Pranav Garg",
-      "priceRange": "₹1500 - ₹5000"
-    }
-    </script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
-        /* --- GLOBAL LUXURY RESET --- */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-            -webkit-font-smoothing: antialiased;
+        /* --- ENTERPRISE LUXURY VARIABLES --- */
+        :root {
+            --bg-dark: #070707;
+            --bg-card: #121212;
+            --gold: #D4AF37;
+            --gold-hover: #b5952f;
+            --text-light: #ffffff;
+            --text-muted: #888888;
+            --border-color: rgba(212, 175, 55, 0.2);
+            --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
         body {
-            background-color: #fafafa;
-            color: #111111;
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
             overflow-x: hidden;
+            scroll-behavior: smooth;
         }
 
-        /* --- INTRO SHUTTER SCREEN --- */
-        #shutter {
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+
+        /* --- NAVIGATION --- */
+        nav {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
+            top: 0; width: 100%;
+            padding: 25px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(7, 7, 7, 0.9);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            transition: var(--transition);
+        }
+        nav.scrolled { padding: 15px 50px; background: rgba(7, 7, 7, 0.98); border-bottom: 1px solid var(--border-color); }
+        .logo { font-size: 1.8rem; font-weight: 700; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; }
+        .logo span { color: #fff; }
+        .nav-links { display: flex; gap: 30px; }
+        .nav-links a { color: #fff; text-decoration: none; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; transition: var(--transition); }
+        .nav-links a:hover { color: var(--gold); }
+
+        /* --- HERO SECTION --- */
+        .hero {
             height: 100vh;
-            background: #09090b;
-            z-index: 9999;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            transition: transform 1.2s cubic-bezier(0.85, 0, 0.15, 1);
-            background-image: repeating-linear-gradient(0deg, #141416, #141416 12px, #0a0a0c 12px, #0a0a0c 24px); 
+            text-align: center;
+            /* Updated background image to car11.jpg */
+            background: linear-gradient(to bottom, rgba(0,0,0,0.4), var(--bg-dark)), url('car11.jpg') center/cover;
+            padding: 0 20px;
         }
-        .intro-text {
-            color: #f4f4f5;
-            margin-bottom: 35px;
-            font-size: 1.3rem;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            font-weight: 400;
-            animation: luxuryPulse 2s infinite ease-in-out;
+        .hero h1 { font-size: 4rem; letter-spacing: 2px; margin-bottom: 20px; text-shadow: 0 10px 30px rgba(0,0,0,0.8); }
+        .hero p { font-size: 1.2rem; color: #ddd; letter-spacing: 2px; font-weight: 300; margin-bottom: 40px; }
+        .btn-gold {
+            background: transparent; border: 1px solid var(--gold); color: var(--gold);
+            padding: 15px 40px; font-size: 1rem; text-transform: uppercase; letter-spacing: 2px;
+            cursor: pointer; transition: var(--transition);
         }
-        @keyframes luxuryPulse {
-            0% { opacity: 0.4; letter-spacing: 3px; }
-            50% { opacity: 1; letter-spacing: 5px; }
-            100% { opacity: 0.4; letter-spacing: 3px; }
+        .btn-gold:hover { background: var(--gold); color: #000; }
+
+        /* --- FILTER SOFTWARE UI --- */
+        .filter-section {
+            background: var(--bg-card);
+            padding: 30px; margin: -50px auto 50px;
+            max-width: 1200px; border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            position: relative; z-index: 10;
+            display: flex; gap: 20px; align-items: center; justify-content: center;
+            border: 1px solid rgba(255,255,255,0.05);
+            flex-wrap: wrap;
         }
-        #scorpio {
-            width: 340px;
+        .filter-group { display: flex; flex-direction: column; width: 250px; }
+        .filter-group label { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+        .filter-group select {
+            background: #000; border: 1px solid var(--border-color); color: #fff;
+            padding: 12px; font-family: 'Montserrat'; outline: none; border-radius: 5px;
             cursor: pointer;
-            transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
-            filter: drop-shadow(0px 20px 30px rgba(0,0,0,0.7));
-        }
-        #scorpio:hover {
-            transform: scale(1.05);
-        }
-        .drive-away {
-            transform: translateX(130vw) scale(1.15) skewX(-8deg) !important;
-            opacity: 0.8;
-        }
-        .slide-up {
-            transform: translateY(-100vh);
         }
 
-        /* --- MAIN WEBSITE CONTENT --- */
-        #main-content {
-            opacity: 0;
-            transition: opacity 1.2s ease-in;
-        }
+        /* --- 12 FEATURES SEO SECTION --- */
+        .container { max-width: 1400px; margin: 0 auto; padding: 50px 20px; }
+        .section-header { text-align: center; margin-bottom: 40px; }
+        .section-header h2 { font-size: 2.8rem; color: var(--gold); margin-bottom: 10px; }
+        .section-header p { color: var(--text-muted); font-size: 1rem; letter-spacing: 1px; }
 
-        /* Header Section (Editorial Luxury Look) */
-        header {
-            background: #ffffff;
-            padding: 90px 20px 70px;
-            text-align: center;
-            border-bottom: 1px solid #eaeaea;
-            position: relative;
-        }
-        header h1 {
-            font-size: 3.8rem;
-            font-weight: 700;
-            color: #0f172a;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-        }
-        header p {
-            font-size: 1.15rem;
-            color: #64748b;
-            margin-top: 8px;
-            font-weight: 300;
-            letter-spacing: 1px;
-        }
-        .location-badge {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 10px 32px;
-            background: #f8fafc;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: #334155;
-            border: 1px solid #e2e8f0;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
-        }
-
-        /* Gallery Container */
-        .container {
-            max-width: 1300px;
-            margin: 80px auto;
-            padding: 0 25px;
-        }
-        .section-title {
-            text-align: center;
-            font-size: 2.4rem;
-            margin-bottom: 60px;
-            font-weight: 600;
-            color: #0f172a;
-            letter-spacing: 0.5px;
-        }
-
-        /* Responsive Grid */
-        .gallery {
+        .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
         }
+        .feature-box {
+            background: var(--bg-card);
+            padding: 30px 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.05);
+            transition: var(--transition);
+        }
+        .feature-box:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.1);
+        }
+        .feature-box i { font-size: 2.5rem; color: var(--gold); margin-bottom: 15px; }
+        .feature-box h4 { font-size: 1.1rem; margin-bottom: 10px; color: #fff; }
+        .feature-box p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
 
-        /* Premium Glass/White Car Card */
+        /* --- CAR FLEET GRID --- */
+        .fleet-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 40px; }
+        
         .car-card {
-            background-color: #ffffff;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-            border: 1px solid #eaeaea;
-            display: flex;
-            flex-direction: column;
-            padding: 24px;
-            position: relative;
+            background: var(--bg-card); border-radius: 10px; overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.03); transition: var(--transition);
+            display: flex; flex-direction: column;
         }
-        .car-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 25px 50px rgba(0,0,0,0.07);
-            border-color: #cbd5e1;
-        }
+        .car-card:hover { transform: translateY(-10px); border-color: var(--gold); box-shadow: 0 15px 30px rgba(212, 175, 55, 0.1); }
+        .car-image { height: 220px; background: #050505; display: flex; align-items: center; justify-content: center; padding: 20px; overflow: hidden; }
+        .car-image img { width: 100%; height: 100%; object-fit: contain; transition: transform 0.6s; }
+        .car-card:hover .car-image img { transform: scale(1.08); }
         
-        /* Image Display Box */
-        .car-img-container {
-            height: 210px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-            background: radial-gradient(circle, #f8fafc 0%, #ffffff 80%);
-            border-radius: 12px;
-            padding: 10px;
-        }
-        .car-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
-            filter: drop-shadow(0px 10px 15px rgba(0,0,0,0.08));
-        }
-        .car-card:hover img {
-            transform: scale(1.08) translateY(-4px);
-        }
-
-        /* Car Details Typography */
-        .car-info {
-            text-align: center;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        .car-title {
-            font-size: 1.45rem;
-            font-weight: 600;
-            color: #0f172a;
-            margin-bottom: 6px;
-        }
-        .car-price {
-            font-size: 1.25rem;
-            color: #1e293b;
-            font-weight: 700;
-            margin-bottom: 16px;
-        }
-        .car-features {
-            font-size: 0.9rem;
-            color: #64748b;
-            margin-bottom: 25px;
-        }
-        .car-features strong {
-            color: #0f172a;
-            background: #f1f5f9;
-            padding: 6px 16px;
-            border-radius: 30px;
-            display: inline-block;
-            margin-bottom: 10px;
-            font-weight: 500;
-            border: 1px solid #e2e8f0;
-        }
+        .car-details { padding: 30px; flex-grow: 1; display: flex; flex-direction: column; }
+        .car-title { font-size: 1.5rem; margin-bottom: 5px; font-weight: 600; font-family: 'Playfair Display'; }
+        .car-category { font-size: 0.75rem; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px; }
+        .car-specs { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05); padding: 15px 0; }
+        .spec { font-size: 0.85rem; color: var(--text-muted); display: flex; align-items: center; gap: 5px; }
+        .spec i { color: var(--gold); }
+        .car-price { font-size: 1.5rem; font-weight: 600; font-family: 'Playfair Display'; margin-bottom: 20px; }
+        .car-price span { font-size: 0.9rem; font-family: 'Montserrat'; color: var(--text-muted); font-weight: 300; }
         
-        /* Ultra-Clean WhatsApp Button */
-        .whatsapp-btn {
-            background-color: #16a34a;
-            color: #fff;
-            text-decoration: none;
-            padding: 14px 20px;
-            border-radius: 12px;
-            font-weight: 600;
-            font-size: 0.95rem;
-            display: inline-block;
-            transition: all 0.3s ease;
-            margin-top: auto;
-            box-shadow: 0 4px 15px rgba(22, 163, 74, 0.25);
-            letter-spacing: 0.5px;
+        .btn-book {
+            background: var(--gold); color: #000; text-align: center; padding: 15px;
+            text-decoration: none; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
+            border-radius: 5px; transition: var(--transition); margin-top: auto; border: none; cursor: pointer;
         }
-        .whatsapp-btn:hover {
-            background-color: #15803d;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(22, 163, 74, 0.35);
-        }
+        .btn-book:hover { background: #fff; }
 
-        /* Luxury Footer */
-        footer {
-            background-color: #ffffff;
-            padding: 70px 20px;
-            text-align: center;
-            border-top: 1px solid #eaeaea;
-            margin-top: 80px;
+        /* --- BOOKING ENGINE MODAL --- */
+        .modal-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8); backdrop-filter: blur(8px);
+            display: flex; justify-content: center; align-items: center;
+            z-index: 2000; opacity: 0; visibility: hidden; transition: var(--transition);
         }
-        footer h3 {
-            font-size: 1.7rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #0f172a;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+        .modal-overlay.active { opacity: 1; visibility: visible; }
+        .modal-content {
+            background: var(--bg-card); width: 90%; max-width: 500px;
+            padding: 40px; border-radius: 10px; border: 1px solid var(--gold);
+            position: relative; transform: translateY(50px); transition: var(--transition);
         }
-        footer p {
-            color: #64748b;
-            margin: 8px 0;
-            font-size: 0.95rem;
-        }
-        footer a {
-            color: #0f172a;
-            text-decoration: none;
-            font-weight: 600;
-            border-bottom: 1px solid #0f172a;
-            padding-bottom: 2px;
-        }
-        .footer-bottom {
-            margin-top: 40px;
-            font-size: 0.85rem;
-            color: #94a3b8;
-        }
+        .modal-overlay.active .modal-content { transform: translateY(0); }
+        .close-modal { position: absolute; top: 20px; right: 20px; color: #fff; font-size: 1.5rem; cursor: pointer; background: none; border: none; }
+        
+        .modal-header { border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 20px; margin-bottom: 20px; }
+        .modal-title { color: var(--gold); font-size: 1.8rem; }
+        .modal-car-name { font-size: 1rem; color: #ccc; margin-top: 5px; }
 
-        /* Mobile Optimization */
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px; text-transform: uppercase; }
+        .form-group input, .form-group select {
+            width: 100%; padding: 15px; background: #000; border: 1px solid rgba(255,255,255,0.1);
+            color: #fff; border-radius: 5px; font-family: 'Montserrat'; outline: none;
+        }
+        .form-group input:focus { border-color: var(--gold); }
+        
+        .price-calculator {
+            background: rgba(212, 175, 55, 0.1); padding: 20px; border-radius: 5px; margin-bottom: 25px;
+            display: flex; justify-content: space-between; align-items: center; border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        .total-label { font-size: 0.9rem; text-transform: uppercase; }
+        .total-price { font-size: 1.8rem; color: var(--gold); font-family: 'Playfair Display'; font-weight: bold; }
+
+        .btn-whatsapp {
+            background: #25D366; color: #fff; width: 100%; padding: 18px; border: none;
+            border-radius: 5px; font-size: 1rem; font-weight: 600; cursor: pointer;
+            display: flex; justify-content: center; align-items: center; gap: 10px; transition: var(--transition);
+        }
+        .btn-whatsapp:hover { background: #128C7E; }
+
+        /* --- FOOTER --- */
+        footer { background: #000; padding: 60px 20px; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); }
+        .footer-logo { font-size: 2rem; color: var(--gold); font-family: 'Playfair Display'; margin-bottom: 20px; }
+        .footer-details p { color: var(--text-muted); margin: 5px 0; font-size: 0.9rem; }
+        .footer-social { margin-top: 20px; }
+        .footer-social a { color: #fff; font-size: 1.5rem; margin: 0 10px; transition: var(--transition); }
+        .footer-social a:hover { color: var(--gold); }
+
+        /* --- MOBILE RESPONSIVENESS --- */
+        @media (max-width: 992px) {
+            .hero h1 { font-size: 3rem; }
+        }
         @media (max-width: 768px) {
-            header h1 { font-size: 2.4rem; letter-spacing: 1px; }
-            .section-title { font-size: 1.9rem; }
-            #scorpio { width: 260px; }
-            .intro-text { font-size: 1.1rem; letter-spacing: 2px; }
-            .container { margin: 40px auto; }
+            nav { flex-direction: column; gap: 15px; padding: 15px; }
+            .nav-links { gap: 15px; flex-wrap: wrap; justify-content: center; }
+            .nav-links a { font-size: 0.8rem; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero p { font-size: 0.9rem; }
+            .filter-section { margin: 20px; padding: 20px; flex-direction: column; }
+            .filter-group { width: 100%; }
+            .section-header h2 { font-size: 2.2rem; }
+            .features-grid { grid-template-columns: repeat(2, 1fr); gap: 15px; }
+            .modal-content { width: 95%; padding: 25px; }
+        }
+        @media (max-width: 480px) {
+            .features-grid { grid-template-columns: 1fr; }
+            .fleet-grid { grid-template-columns: 1fr; gap: 20px; }
+            .car-price { font-size: 1.3rem; }
         }
     </style>
 </head>
 <body>
 
-    <audio id="carSound" src="engine-sound.mp3" preload="auto"></audio>
-
-    <div id="shutter">
-        <h2 class="intro-text">Tap to Start Engine</h2>
-        <img src="scorpio.png" id="scorpio" alt="Scorpio">
-    </div>
-
-    <div id="main-content">
-        <header>
-            <h1>Hot Wheels CAR RENTAL</h1>
-            <p>Premium Car Rental Services</p>
-            <div class="location-badge">📍 Clement Town, Dehradun</div>
-        </header>
-
-        <div class="container">
-            <h2 class="section-title">Our Exclusive Fleet</h2>
-            
-            <div class="gallery">
-                <div class="car-card">
-                    <div class="car-img-container">
-                        <img src="car1.png" alt="Scorpio N on rent Dehradun">
-                    </div>
-                    <div class="car-info">
-                        <div class="car-title">Scorpio N</div>
-                        <div class="car-price">₹6,000 / Day</div>
-                        <div class="car-features">
-                            <strong>✔️ Unlimited Kilometers</strong><br>
-                            SUV
-                        </div>
-                        <a href="https://wa.me/919720392305?text=Hello%20Pranav,%20I%20want%20to%20inquire%20about%20the%20Scorpio%20N." target="_blank" class="whatsapp-btn">Book on WhatsApp</a>
-                    </div>
-                </div>
-
-                <div class="car-card">
-                    <div class="car-img-container">
-                        <img src="car2.png" alt="Mahindra Thar on rent Dehradun">
-                    </div>
-                    <div class="car-info">
-                        <div class="car-title">Mahindra Thar</div>
-                        <div class="car-price">₹5,000 / Day</div>
-                        <div class="car-features">
-                            <strong>✔️ Unlimited Kilometers</strong><br>
-                            SUV
-                        </div>
-                        <a href="https://wa.me/919720392305?text=Hello%20Pranav,%20I%20want%20to%20inquire%20about%20the%20Mahindra%20Thar." target="_blank" class="whatsapp-btn">Book on WhatsApp</a>
-                    </div>
-                </div>
-
-                <div class="car-card">
-                    <div class="car-img-container">
-                        <img src="car3.png" alt="Hyundai Creta on rent Dehradun">
-                    </div>
-                    <div class="car-info">
-                        <div class="car-title">Hyundai Creta</div>
-                        <div class="car-price">₹3,500 / Day</div>
-                        <div class="car-features">
-                            <strong>✔️ Unlimited Kilometers</strong><br>
-                            SUV
-                        </div>
-                        <a href="https://wa.me/919720392305?text=Hello%20Pranav,%20I%20want%20to%20inquire%20about%20the%20Hyundai%20Creta." target="_blank" class="whatsapp-btn">Book on WhatsApp</a>
-                    </div>
-                </div>
-
-                <div class="car-card">
-                    <div class="car-img-container">
-                        <img src="car4.png" alt="Toyota Fortuner on rent Dehradun">
-                    </div>
-                    <div class="car-info">
-                        <div class="car-title">BALENO</div>
-                        <div class="car-price">₹2,500 / Day</div>
-                        <div class="car-features">
-                            <strong>✔️ Unlimited Kilometers</strong><br>
-                            HATCHBACK
-                        </div>
-                        <a href="https://wa.me/919720392305?text=Hello%20Pranav,%20I%20want%20to%20inquire%20about%20the%20baleno." target="_blank" class="whatsapp-btn">Book on WhatsApp</a>
-                    </div>
-                </div>
-
-                <div class="car-card">
-                    <div class="car-img-container">
-                        <img src="car5.png" alt="Kia Seltos on rent Dehradun">
-                    </div>
-                    <div class="car-info">
-                        <div class="car-title">FRONX</div>
-                        <div class="car-price">₹3,000 / Day</div>
-                        <div class="car-features">
-                            <strong>✔️ Unlimited Kilometers</strong><br>
-                            HATCHBACK
-                        </div>
-                        <a href="https://wa.me/919720392305?text=Hello%20Pranav,%20I%20want%20to%20inquire%20about%20the%20fronx." target="_blank" class="whatsapp-btn">Book on WhatsApp</a>
-                    </div>
-                </div>
-
-                <div class="car-card">
-                    <div class="car-img-container">
-                        <img src="car6.png" alt="Honda City on rent Dehradun">
-                    </div>
-                    <div class="car-info">
-                        <div class="car-title">Honda City</div>
-                        <div class="car-price">₹3,500 / Day</div>
-                        <div class="car-features">
-                            <strong>✔️ Unlimited Kilometers</strong><br>
-                            Sedan
-                        </div>
-                        <a href="https://wa.me/919720392305?text=Hello%20Pranav,%20I%20want%20to%20inquire%20about%20the%20Honda%20City." target="_blank" class="whatsapp-btn">Book on WhatsApp</a>
-                    </div>
-                </div>
-
-                <div class="car-card">
-                    <div class="car-img-container">
-                        <img src="car7.png" alt="Maruti Swift on rent Dehradun">
-                    </div>
-                    <div class="car-info">
-                        <div class="car-title">Maruti Swift</div>
-                        <div class="car-price">₹2,500 / Day</div>
-                        <div class="car-features">
-                            <strong>✔️ Unlimited Kilometers</strong><br>
-                            HATCHBACK
-                        </div>
-                        <a href="https://wa.me/919720392305?text=Hello%20Pranav,%20I%20want%20to%20inquire%20about%20the%20Maruti%20Swift." target="_blank" class="whatsapp-btn">Book on WhatsApp</a>
-                    </div>
-                </div>
-
-                <div class="car-card">
-                    <div class="car-img-container">
-                        <img src="car8.png" alt="i20">
-                    </div>
-                    <div class="car-info">
-                        <div class="car-title">i20</div>
-                        <div class="car-price">₹2500 / Day</div>
-                        <div class="car-features">
-                            <strong>✔️ Unlimited Kilometers</strong><br>
-                            HATCHBACK
-                        </div>
-                        <a href="https://wa.me/919720392305?text=Hello%20Pranav,%20I%20want%20to%20inquire%20about%20the%20i20." target="_blank" class="whatsapp-btn">Book on WhatsApp</a>
-                    </div>
-                </div>
-            </div>
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <div class="logo">Hot<span>Wheels</span></div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#fleet">Our Fleet</a>
+            <a href="tel:+919720392305"><i class="fas fa-phone-alt"></i> +91 9720392305</a>
         </div>
+    </nav>
 
-        <footer>
-            <h3>Hot Wheels Car Rental</h3>
-            <p><strong>Owner:</strong> Pranav Garg</p>
-            <p><strong>Location:</strong> Clement Town,SUBHASH NAGAR, Dehradun, Uttarakhand,(248002)</p>
-            <p><strong>Contact:</strong> <a href="https://wa.me/919720392305">+91 9720392305</a></p>
-            <p class="footer-bottom">&copy; 2026 Hot Wheels Car Rental. All rights reserved.</p>
-       
-    <p>Follow me on Instagram: <a href="https://www.instagram.com/hotwheels__carrental?igsi=MWplNmFlNzd0ZmJ3bQ==" target="_blank" style="color: #e1306c; text-decoration: none; font-weight: bold;">@hotwheels_carrental</a></p>
-</footer>
+    <!-- HERO -->
+    <section class="hero">
+        <h1>BEST CAR RENTAL IN DEHRADUN</h1>
+        <p>Premium Self-Drive & Luxury Fleet at Affordable Prices</p>
+        <button class="btn-gold" onclick="document.getElementById('fleet').scrollIntoView({behavior: 'smooth'})">Explore Vehicles</button>
+    </section>
+
+    <!-- FILTER SOFTWARE UI -->
+    <div class="filter-section">
+        <div class="filter-group">
+            <label>Car Category</label>
+            <select id="filter-category" onchange="filterCars()">
+                <option value="all">All Categories</option>
+                <option value="suv">Premium SUV / 4x4</option>
+                <option value="sedan">Luxury Sedan</option>
+                <option value="hatchback">Hatchback</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label>Price Range</label>
+            <select id="filter-price" onchange="filterCars()">
+                <option value="all">Any Price</option>
+                <option value="low">Under ₹3,500/Day</option>
+                <option value="high">Above ₹3,500/Day</option>
+            </select>
+        </div>
     </div>
 
+    <!-- 12 SEO FEATURES SECTION -->
+    <section id="features" class="container">
+        <div class="section-header">
+            <h2>Why Choose Hot Wheels Dehradun?</h2>
+            <p>Top-Rated Self Drive Car Rental Service with Unmatched Benefits</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-box"><i class="fas fa-route"></i><h4>Unlimited Kilometers</h4><p>Drive across Uttarakhand without worrying about distance limits.</p></div>
+            <div class="feature-box"><i class="fas fa-headset"></i><h4>24/7 Support</h4><p>Round-the-clock roadside assistance whenever you need it.</p></div>
+            <div class="feature-box"><i class="fas fa-spray-can"></i><h4>Sanitized Cars</h4><p>Vehicles thoroughly cleaned and sanitized before every trip.</p></div>
+            <div class="feature-box"><i class="fas fa-rupee-sign"></i><h4>No Hidden Charges</h4><p>100% transparent pricing with absolutely no surprise fees.</p></div>
+            <div class="feature-box"><i class="fas fa-plane-arrival"></i><h4>Airport Pickup</h4><p>Hassle-free car delivery at Jolly Grant Airport, Dehradun.</p></div>
+            <div class="feature-box"><i class="fas fa-map-marker-alt"></i><h4>Doorstep Delivery</h4><p>Get your chosen vehicle delivered straight to your home.</p></div>
+            <div class="feature-box"><i class="fas fa-shield-alt"></i><h4>Fully Insured</h4><p>Comprehensive insurance covering your stress-free travels.</p></div>
+            <div class="feature-box"><i class="fas fa-stopwatch"></i><h4>Quick Verification</h4><p>Instant booking approval with minimal paperwork via WhatsApp.</p></div>
+            <div class="feature-box"><i class="fas fa-car-side"></i><h4>Premium Fleet</h4><p>From luxury 4x4 SUVs to budget-friendly hatchbacks.</p></div>
+            <div class="feature-box"><i class="fas fa-calendar-alt"></i><h4>Flexible Bookings</h4><p>Rent cars by the day, week, or month tailored to you.</p></div>
+            <div class="feature-box"><i class="fas fa-wallet"></i><h4>Best Pricing</h4><p>Highly competitive rental rates starting from just ₹2500/day.</p></div>
+            <div class="feature-box"><i class="fas fa-star"></i><h4>Top Rated</h4><p>Hundreds of happy travelers trust Hot Wheels Dehradun.</p></div>
+        </div>
+    </section>
+
+    <!-- CAR FLEET GRID -->
+    <section id="fleet" class="container">
+        <div class="section-header">
+            <h2>Our Self-Drive Fleet</h2>
+            <p>Select your perfect ride for exploring Dehradun & Mussoorie.</p>
+        </div>
+        
+        <!-- JS WILL INJECT CARS HERE -->
+        <div class="fleet-grid" id="car-grid"></div>
+    </section>
+
+    <!-- BOOKING ENGINE MODAL -->
+    <div class="modal-overlay" id="bookingModal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()"><i class="fas fa-times"></i></button>
+            
+            <div class="modal-header">
+                <h3 class="modal-title">Book Vehicle</h3>
+                <p class="modal-car-name" id="modal-car-display">Selected Car: -</p>
+            </div>
+
+            <input type="hidden" id="b-carName">
+            <input type="hidden" id="b-carPrice">
+
+            <div class="form-group">
+                <label>Pickup & Drop Dates</label>
+                <input type="text" id="datePicker" placeholder="Select your travel dates">
+            </div>
+
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" id="b-userName" placeholder="Enter Full Name">
+            </div>
+
+            <div class="price-calculator">
+                <div class="total-label">Estimated Total (<span id="calc-days">0</span> Days)</div>
+                <div class="total-price">₹<span id="calc-total">0</span></div>
+            </div>
+
+            <button class="btn-whatsapp" onclick="submitBooking()">
+                <i class="fab fa-whatsapp"></i> Confirm & Book via WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">Hot Wheels Car Rental Dehradun</div>
+        <div class="footer-details">
+            <p><strong>Top Rated Self Drive Cars in Dehradun & Jolly Grant Airport</strong></p>
+            <p>Owned by: Pranav Garg | Clement Town, Subhash Nagar, Dehradun (248002)</p>
+            <p>Contact / WhatsApp: +91 9720392305</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.instagram.com/hotwheels__carrental" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/919720392305" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p style="margin-top: 30px; font-size: 0.8rem; color: #555;">&copy; 2026 Hot Wheels Car Rental Dehradun. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script>
-        const scorpio = document.getElementById('scorpio');
-        const shutter = document.getElementById('shutter');
-        const mainContent = document.getElementById('main-content');
-        const carSound = document.getElementById('carSound');
-
-        scorpio.addEventListener('click', () => {
-            carSound.play().catch(error => console.log("Sound ready on interaction."));
-            
-            scorpio.classList.add('drive-away');
-            
-            setTimeout(() => {
-                shutter.classList.add('slide-up');
-                mainContent.style.opacity = '1';
-            }, 800);
-
-            setTimeout(() => {
-                shutter.style.display = 'none';
-            }, 2000);
+        // --- NAVBAR SCROLL EFFECT ---
+        window.addEventListener('scroll', () => {
+            if(window.scrollY > 50) document.getElementById('navbar').classList.add('scrolled');
+            else document.getElementById('navbar').classList.remove('scrolled');
         });
+
+        // --- DATABASE OF CARS (WITH CAR10.JPG INCLUDED) ---
+        const cars = [
+            { id: 1, name: "Scorpio N", category: "suv", price: 6000, img: "car1.png", seats: 7, trans: "Automatic" },
+            { id: 2, name: "Mahindra Thar", category: "suv", price: 5000, img: "car2.png", seats: 4, trans: "Manual 4x4" },
+            { id: 3, name: "Hyundai Creta", category: "suv", price: 3500, img: "car3.png", seats: 5, trans: "Automatic" },
+            { id: 4, name: "Honda City", category: "sedan", price: 3500, img: "car6.png", seats: 5, trans: "Manual" },
+            { id: 5, name: "Maruti Fronx", category: "hatchback", price: 3000, img: "car5.png", seats: 5, trans: "Automatic" },
+            { id: 6, name: "Maruti Baleno", category: "hatchback", price: 2500, img: "car4.png", seats: 5, trans: "Manual" },
+            { id: 7, name: "Maruti Swift", category: "hatchback", price: 2500, img: "car7.png", seats: 5, trans: "Manual" },
+            { id: 8, name: "Hyundai i20", category: "hatchback", price: 2500, img: "car8.png", seats: 5, trans: "Manual" },
+            // car10.jpg placeholder integration added here
+            { id: 9, name: "Toyota Fortuner", category: "suv", price: 8000, img: "car10.jpg", seats: 7, trans: "Automatic 4x4" }
+        ];
+
+        // --- RENDER CARS DYNAMICALLY WITH PLACEHOLDER FALLBACK ---
+        const grid = document.getElementById('car-grid');
+        
+        function renderCars(carArray) {
+            grid.innerHTML = "";
+            carArray.forEach(car => {
+                // If car10.jpg (or any image) is missing in your folder, the onerror event auto-generates a clean placeholder
+                grid.innerHTML += `
+                    <div class="car-card">
+                        <div class="car-image">
+                            <img src="${car.img}" alt="${car.name} Rental Dehradun" 
+                            onerror="this.onerror=null; this.src='https://via.placeholder.com/400x250/111/D4AF37?text=${encodeURIComponent(car.name)}'">
+                        </div>
+                        <div class="car-details">
+                            <div class="car-category">${car.category}</div>
+                            <div class="car-title">${car.name}</div>
+                            <div class="car-specs">
+                                <span class="spec"><i class="fas fa-users"></i> ${car.seats} Seats</span>
+                                <span class="spec"><i class="fas fa-cog"></i> ${car.trans}</span>
+                            </div>
+                            <div class="car-price">₹${car.price.toLocaleString()} <span>/ Day</span></div>
+                            <button class="btn-book" onclick="openModal('${car.name}', ${car.price})">Book This Car</button>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        renderCars(cars);
+
+        // --- FILTERING LOGIC ---
+        function filterCars() {
+            const category = document.getElementById('filter-category').value;
+            const price = document.getElementById('filter-price').value;
+            let filtered = cars;
+
+            if (category !== "all") {
+                filtered = filtered.filter(car => car.category === category);
+            }
+            if (price === "low") {
+                filtered = filtered.filter(car => car.price <= 3500);
+            } else if (price === "high") {
+                filtered = filtered.filter(car => car.price > 3500);
+            }
+            renderCars(filtered);
+        }
+
+        // --- BOOKING ENGINE ---
+        let selectedDays = 0;
+        let selectedPricePerDay = 0;
+
+        const dateInput = flatpickr("#datePicker", {
+            mode: "range",
+            minDate: "today",
+            dateFormat: "d-M-Y",
+            onChange: function(selectedDates) {
+                if(selectedDates.length === 2) {
+                    const diffTime = Math.abs(selectedDates[1] - selectedDates[0]);
+                    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+                    selectedDays = diffDays === 0 ? 1 : diffDays; 
+                    updateCalculator();
+                } else {
+                    selectedDays = 0;
+                    updateCalculator();
+                }
+            }
+        });
+
+        function openModal(carName, price) {
+            document.getElementById('bookingModal').classList.add('active');
+            document.getElementById('modal-car-display').innerText = carName + " (₹" + price + "/Day)";
+            document.getElementById('b-carName').value = carName;
+            selectedPricePerDay = price;
+            
+            dateInput.clear();
+            selectedDays = 0;
+            updateCalculator();
+        }
+
+        function closeModal() {
+            document.getElementById('bookingModal').classList.remove('active');
+        }
+
+        function updateCalculator() {
+            document.getElementById('calc-days').innerText = selectedDays;
+            let total = selectedDays * selectedPricePerDay;
+            document.getElementById('calc-total').innerText = total.toLocaleString();
+        }
+
+        function submitBooking() {
+            const name = document.getElementById('b-userName').value;
+            const car = document.getElementById('b-carName').value;
+            const dates = document.getElementById('datePicker').value;
+            const total = document.getElementById('calc-total').innerText;
+
+            if(!name || !dates || selectedDays === 0) {
+                alert("Please fill your name and select valid travel dates.");
+                return;
+            }
+
+            const message = `*HOT WHEELS DEHRADUN BOOKING*%0A%0A*Name:* ${name}%0A*Car:* ${car}%0A*Dates:* ${dates} (${selectedDays} Days)%0A*Estimated Total:* ₹${total}%0A%0AHello Pranav, I am looking to book this car in Dehradun.`;
+            const whatsappUrl = `https://wa.me/919720392305?text=${message}`;
+            window.open(whatsappUrl, '_blank');
+            closeModal();
+        }
     </script>
 </body>
 </html>
